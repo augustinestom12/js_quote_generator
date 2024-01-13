@@ -1,45 +1,74 @@
-body{
+body {
     display: flex;
     flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    
+    align-items: center;
+    justify-content: center;
     background-color: black;
     color: seashell;
     text-align: center;
 }
-h2{
+
+h2 {
     margin-top: 20px;
     text-align: center;
 }
-.container{
+
+.container {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 20px;
     border-radius: 20px;
     background-color: lightcoral;
-    width:500px;
-    height: 250px; 
+    width: 90%;
     max-width: 500px;
-    
-    max-height: 500px;
-    
+    height: auto;
 }
-#quote{
+
+#quote {
+    text-decoration: wavy;
     text-align: center;
-    color:black;
-    font-size:xx-large;
+    color: black;
+    font-size: larger;
+    height:fit-content
 }
-#person{
+
+#person {
     text-align: center;
-    font-size: x-large;
-    color:purple;
+    font-size: larger;
+    color: purple;
 }
-#btn{
-    margin-top: 50px;
-    text-align: center;
+
+#btn {
+    margin-top: 20px;
     background-color: aqua;
-    height: 50px;
-    width: 130px;
-    font-size: large;
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    font-size: medium;
     margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 100%;
+    position: absolute;
+    font-size: small;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: 10px;
+        width:300px;
+    }
+
+    #btn {
+        margin-top: 50px;
+        width: fit-content;
+        height: 40px;
+        border-radius: 12px;
+    }
+
+    footer {
+        margin-top: 100%;
+        position: realtive;
+    }
 }
